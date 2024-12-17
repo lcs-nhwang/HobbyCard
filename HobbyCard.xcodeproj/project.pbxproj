@@ -13,6 +13,7 @@
 		C29E2A372D11BB2E0097CCB6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C29E2A302D11BB2E0097CCB6 /* Assets.xcassets */; };
 		C29E2A3C2D11BBAF0097CCB6 /* Player.swift in Sources */ = {isa = PBXBuildFile; fileRef = C29E2A3B2D11BBAF0097CCB6 /* Player.swift */; };
 		C29E2A3E2D11BC370097CCB6 /* CardTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C29E2A3D2D11BC370097CCB6 /* CardTabView.swift */; };
+		C29E2A412D11BCB10097CCB6 /* HeptagonBackground.swift in Sources */ = {isa = PBXBuildFile; fileRef = C29E2A402D11BCB10097CCB6 /* HeptagonBackground.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -23,6 +24,7 @@
 		C29E2A322D11BB2E0097CCB6 /* HobbyCardApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HobbyCardApp.swift; sourceTree = "<group>"; };
 		C29E2A3B2D11BBAF0097CCB6 /* Player.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Player.swift; sourceTree = "<group>"; };
 		C29E2A3D2D11BC370097CCB6 /* CardTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardTabView.swift; sourceTree = "<group>"; };
+		C29E2A402D11BCB10097CCB6 /* HeptagonBackground.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeptagonBackground.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -64,6 +66,7 @@
 			isa = PBXGroup;
 			children = (
 				C29E2A322D11BB2E0097CCB6 /* HobbyCardApp.swift */,
+				C29E2A3F2D11BC760097CCB6 /* Shape */,
 				C29E2A3A2D11BB830097CCB6 /* Model */,
 				C29E2A392D11BB530097CCB6 /* Views */,
 				C29E2A2F2D11BB2E0097CCB6 /* Preview Content */,
@@ -87,6 +90,14 @@
 				C29E2A3B2D11BBAF0097CCB6 /* Player.swift */,
 			);
 			path = Model;
+			sourceTree = "<group>";
+		};
+		C29E2A3F2D11BC760097CCB6 /* Shape */ = {
+			isa = PBXGroup;
+			children = (
+				C29E2A402D11BCB10097CCB6 /* HeptagonBackground.swift */,
+			);
+			path = Shape;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -165,6 +176,7 @@
 				C29E2A3E2D11BC370097CCB6 /* CardTabView.swift in Sources */,
 				C29E2A342D11BB2E0097CCB6 /* CardView.swift in Sources */,
 				C29E2A352D11BB2E0097CCB6 /* HobbyCardApp.swift in Sources */,
+				C29E2A412D11BCB10097CCB6 /* HeptagonBackground.swift in Sources */,
 				C29E2A3C2D11BBAF0097CCB6 /* Player.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
