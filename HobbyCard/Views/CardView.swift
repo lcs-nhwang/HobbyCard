@@ -8,20 +8,66 @@
 import SwiftUI
 
 //COLORS
-let gradientColors1 = Gradient(colors: [Color.white, Color.goldYellow, Color.yellow])
-let gradientColors2 = Gradient(colors: [Color.yellow, Color.goldYellow, Color.darkGold])
-let linearGradient1 = LinearGradient(gradient: gradientColors1, startPoint: .top, endPoint: .bottom)
-let linearGradient2 = LinearGradient(gradient: gradientColors2, startPoint: .top, endPoint: .bottom)
+let gradientColors = Gradient(colors: [Color.white, Color.goldYellow, Color.darkGold])
+let linearGradient = LinearGradient(gradient: gradientColors, startPoint: .top, endPoint: .bottom)
 
-struct ContentView: View {
+
+
+
+struct CardView: View {
+    
+    let providedPlayer: Player
     var body: some View {
+        
         VStack(alignment: .center) {
             ZStack{
-                Rectangle()
-                Heptagon()
-                    .fill(linearGradient1)
-                Pentagon()
-                    .fill(linearGradient2)
+                Color.black
+                ZStack {
+                    Heptagon()
+                        .fill(linearGradient)
+                    VStack {
+                        HStack {
+                            Spacer()
+                                .frame(width: 60, height: 10)
+                            VStack {
+                                ZStack {
+                                    Circle()
+                                        .fill()
+                                }
+                                Text(providedPlayer.mainRating)
+                                    .font(.custom("PingFangHK -SemiBold", size: 89.0, relativeTo: .body))
+                                Image(providedPlayer.fcLogo)
+                                    .resizable()
+                                    .scaledToFit()
+                                    .frame(width: 100, height: 100)
+                                Text(providedPlayer.position)
+                                    .font(.custom("Farah", size: 35.0, relativeTo: .body))
+                            }
+                            Image(providedPlayer.playerImage)
+                                .resizable()
+                                .scaledToFit()
+                                .frame(width: 300, height: 300)
+                        }
+                        Text(providedPlayer.name)
+                            .font(.custom("Farah", size: 60.0, relativeTo: .body))
+                        Text("Stats")
+                            .font(.largeTitle)
+                        HStack {
+                            VStack {
+                                Text("\(providedPlayer.pace) PAC")
+                                Text("\(providedPlayer.shooting) SHO")
+                                Text("\(providedPlayer.passing) PAS")
+                            }
+                            Spacer()
+                                .frame(width: 100, height: 30)
+                            VStack {
+                                Text("\(providedPlayer.dribbling) DRI")
+                                Text("\(providedPlayer.defense) DEF")
+                                Text("\(providedPlayer.physical) PHY")
+                            }
+                        }
+                    }
+                }
                 
             }
         }
@@ -30,5 +76,5 @@ struct ContentView: View {
 }
 
 #Preview {
-    ContentView()
+    CardView(providedPlayer: jackson)
 }
