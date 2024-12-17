@@ -10,7 +10,12 @@ import SwiftUI
 struct ContentView: View {
     var body: some View {
         VStack(alignment: .center) {
-            Heptagon()
+            ZStack{
+                Rectangle()
+                Heptagon()
+                    .fill(.goldYellow)
+                
+            }
         }
     }
 }
