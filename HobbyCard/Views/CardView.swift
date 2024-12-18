@@ -10,7 +10,8 @@ import SwiftUI
 //COLORS
 let gradientColors = Gradient(colors: [Color.white, Color.goldYellow, Color.darkGold])
 let linearGradient = LinearGradient(gradient: gradientColors, startPoint: .top, endPoint: .bottom)
-
+let gradientColorsForRating = Gradient(colors: [Color.white, Color.blue, Color.cyan])
+let ratingLinearGradient = LinearGradient(gradient: gradientColorsForRating, startPoint: .top, endPoint: .bottom)
 
 
 
@@ -28,18 +29,20 @@ struct CardView: View {
                     VStack {
                         HStack {
                             Spacer()
-                                .frame(width: 60, height: 10)
+                                .frame(width: 60)
                             VStack {
                                 ZStack {
                                     Circle()
-                                        .fill()
+                                        
+                                    Text(providedPlayer.mainRating)
+                                        .font(.custom("PingFangHK -SemiBold", size: 89.0, relativeTo: .body))
+                                        .foregroundStyle(.goldYellow)
                                 }
-                                Text(providedPlayer.mainRating)
-                                    .font(.custom("PingFangHK -SemiBold", size: 89.0, relativeTo: .body))
+                    
                                 Image(providedPlayer.fcLogo)
                                     .resizable()
                                     .scaledToFit()
-                                    .frame(width: 100, height: 100)
+                                    .frame(width: 120)
                                 Text(providedPlayer.position)
                                     .font(.custom("Farah", size: 35.0, relativeTo: .body))
                             }
@@ -50,6 +53,9 @@ struct CardView: View {
                         }
                         Text(providedPlayer.name)
                             .font(.custom("Farah", size: 60.0, relativeTo: .body))
+                        Rectangle()
+                            .fill(.brown)
+                            .frame(height:1)
                         Text("Stats")
                             .font(.largeTitle)
                         HStack {
@@ -59,7 +65,12 @@ struct CardView: View {
                                 Text("\(providedPlayer.passing) PAS")
                             }
                             Spacer()
-                                .frame(width: 100, height: 30)
+                                .frame(width: 50)
+                            Rectangle()
+                                .fill(.brown)
+                                .frame(width: 1, height: 100)
+                            Spacer()
+                                .frame(width: 50)
                             VStack {
                                 Text("\(providedPlayer.dribbling) DRI")
                                 Text("\(providedPlayer.defense) DEF")
@@ -76,5 +87,5 @@ struct CardView: View {
 }
 
 #Preview {
-    CardView(providedPlayer: jackson)
+    CardView(providedPlayer: palmer)
 }

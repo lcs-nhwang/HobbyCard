@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct Pentagon: Shape{
+struct Octagon: Shape{
     func path(in rect: CGRect) -> Path {
         var path = Path()
         
@@ -25,5 +25,5 @@ struct Pentagon: Shape{
 }
 
 #Preview {
-    Pentagon()
+    Octagon()
 }
