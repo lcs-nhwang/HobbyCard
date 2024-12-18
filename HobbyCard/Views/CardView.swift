@@ -32,7 +32,8 @@ struct CardView: View {
                                 .frame(width: 60)
                             VStack {
                                 ZStack {
-                                    Circle()
+                                    RoundedRectangle(cornerRadius: 15.0)
+                                        .aspectRatio(1.0/1.0, contentMode: .fit)
                                         
                                     Text(providedPlayer.mainRating)
                                         .font(.custom("PingFangHK -SemiBold", size: 89.0, relativeTo: .body))
@@ -87,5 +88,5 @@ struct CardView: View {
 }
 
 #Preview {
-    CardView(providedPlayer: palmer)
+    CardView(providedPlayer: salah)
 }

@@ -14,7 +14,6 @@
 		C29E2A3C2D11BBAF0097CCB6 /* Player.swift in Sources */ = {isa = PBXBuildFile; fileRef = C29E2A3B2D11BBAF0097CCB6 /* Player.swift */; };
 		C29E2A3E2D11BC370097CCB6 /* CardTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C29E2A3D2D11BC370097CCB6 /* CardTabView.swift */; };
 		C29E2A412D11BCB10097CCB6 /* Heptagon.swift in Sources */ = {isa = PBXBuildFile; fileRef = C29E2A402D11BCB10097CCB6 /* Heptagon.swift */; };
-		C29E2A432D1209ED0097CCB6 /* Pentagon.swift in Sources */ = {isa = PBXBuildFile; fileRef = C29E2A422D1209ED0097CCB6 /* Pentagon.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,7 +25,6 @@
 		C29E2A3B2D11BBAF0097CCB6 /* Player.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Player.swift; sourceTree = "<group>"; };
 		C29E2A3D2D11BC370097CCB6 /* CardTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardTabView.swift; sourceTree = "<group>"; };
 		C29E2A402D11BCB10097CCB6 /* Heptagon.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Heptagon.swift; sourceTree = "<group>"; };
-		C29E2A422D1209ED0097CCB6 /* Pentagon.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Pentagon.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -98,7 +96,6 @@
 			isa = PBXGroup;
 			children = (
 				C29E2A402D11BCB10097CCB6 /* Heptagon.swift */,
-				C29E2A422D1209ED0097CCB6 /* Pentagon.swift */,
 			);
 			path = Shape;
 			sourceTree = "<group>";
@@ -177,7 +174,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				C29E2A3E2D11BC370097CCB6 /* CardTabView.swift in Sources */,
-				C29E2A432D1209ED0097CCB6 /* Pentagon.swift in Sources */,
 				C29E2A342D11BB2E0097CCB6 /* CardView.swift in Sources */,
 				C29E2A352D11BB2E0097CCB6 /* HobbyCardApp.swift in Sources */,
 				C29E2A412D11BCB10097CCB6 /* Heptagon.swift in Sources */,
