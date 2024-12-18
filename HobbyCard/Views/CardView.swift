@@ -30,7 +30,7 @@ struct CardView: View {
                         HStack {
                             Spacer()
                                 .frame(width: 60)
-                            VStack {
+                            VStack (alignment: .center) {
                                 ZStack {
                                     RoundedRectangle(cornerRadius: 15.0)
                                         .aspectRatio(1.0/1.0, contentMode: .fit)
@@ -57,7 +57,7 @@ struct CardView: View {
                         Rectangle()
                             .fill(.brown)
                             .frame(height:1)
-                        Text("Stats")
+                        Text("STATS")
                             .font(.largeTitle)
                         HStack {
                             VStack {

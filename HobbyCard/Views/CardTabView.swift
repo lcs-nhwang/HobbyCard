@@ -8,8 +8,16 @@
 import SwiftUI
 
 struct CardTabView: View {
+   
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        TabView {
+            ForEach(playerList) { currentPlayer in
+                CardView(providedPlayer: currentPlayer) 
+            }
+            .ignoresSafeArea()
+            .tabViewStyle(.page(indexDisplayMode: .never))
+            .persistentSystemOverlays(.hidden)
+        }
     }
 }
 
